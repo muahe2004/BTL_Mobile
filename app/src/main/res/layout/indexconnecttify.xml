@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- ScrollView cho phép nội dung cuộn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabMenu">
+
+        <!-- Nội dung chính của bạn -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Nội dung khác của bạn ở trên đây -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/errTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="cursive"
+                    android:text="Connectify"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="32dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    tools:ignore="RtlCompat" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/notify"
+                    android:contentDescription="Example button"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/chat"
+                    android:contentDescription="Example button"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:scrollbars="none"
+                    android:paddingEnd="10dp">
+
+                    <!-- Story cua nguoi dung ne-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:scrollbars="none"
+                        android:paddingEnd="10dp">
+
+                        <!-- Cai nay de hien thi hinh anh -->
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_gradient"
+                            android:layout_marginEnd="8dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_margin="2dp"
+                                app:cardCornerRadius="999dp"
+                                app:cardBackgroundColor="@android:color/white">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/lvm" />
+                            </androidx.cardview.widget.CardView>
+                        </FrameLayout>
+
+                        <!-- Cai nay la ten nguoi dung-->
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="muahe.2004"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentBottom="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Các phần nội dung khác -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:scrollbars="none"
+                    android:paddingEnd="10dp">
+
+                    <!-- Nội dung story người dùng -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:scrollbars="none">
+
+                    <!-- Cai nay de hien thi hinh anh -->
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/border_gradient">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="999dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/lvm" />
+                        </androidx.cardview.widget.CardView>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:scrollbars="none">
+
+                        <!-- Cai nay la ten nguoi dung-->
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="muahe.2004"
+                            android:textStyle="bold" />
+
+                        <!-- Cai nay la ten nguoi dung-->
+                        <TextView
+                            android:id="@+id/tvAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Hung Yen University of technology and education" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/lvm"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!-- Tab Menu luôn luôn dính dưới cùng màn hình -->
+    <LinearLayout
+        android:id="@+id/tabMenu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat"
+            android:contentDescription="Home"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notify"
+            android:contentDescription="Search"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat"
+            android:contentDescription="Profile"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat"
+            android:contentDescription="Profile"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/notify"
+            android:contentDescription="Search"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+</RelativeLayout>
