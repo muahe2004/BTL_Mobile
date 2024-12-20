@@ -1,4 +1,4 @@
-package com.example.btl_mobile;
+package com.example.btl_mobile; // packagename
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.example.btl_mobile.R;
 import com.example.btl_mobile.actIndex;
+
+// path sd Card /data/data/AppName (packagename) /databases/DBname (ten CSDL. VD test.db)
 
 public class MainActivity extends AppCompatActivity {
     // Bước 1: Khai báo các thành phần giao diện
