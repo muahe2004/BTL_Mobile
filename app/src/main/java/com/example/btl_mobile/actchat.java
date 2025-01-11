@@ -13,13 +13,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.btl_mobile.R;
 
-public class actIndex extends AppCompatActivity {
+public class actchat extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.indexconnecttify);
+        setContentView(R.layout.chatconnectify);
     }
 }

@@ -19,7 +19,8 @@ import com.example.btl_mobile.actIndex;
 
 public class MainActivity extends AppCompatActivity {
     // Bước 1: Khai báo các thành phần giao diện
-    Button btnIndex;
+    Button btnIndex, btnChat;
+
 
 
     @Override
@@ -28,9 +29,16 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.loginconnectify);
         btnIndex = findViewById(R.id.btnIndex);
+        btnChat = findViewById(R.id.btnChat);
 
         btnIndex.setOnClickListener(v -> {
             Intent it = new Intent(MainActivity.this, actIndex.class);
+            startActivity(it);
+            finish(); //
+        });
+
+        btnChat.setOnClickListener(v -> {
+            Intent it = new Intent(MainActivity.this, actchat.class);
             startActivity(it);
             finish(); //
         });

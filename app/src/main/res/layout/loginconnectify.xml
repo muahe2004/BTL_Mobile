@@ -10,4 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:text="Home" />
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:text="Chat" />
 </LinearLayout>
